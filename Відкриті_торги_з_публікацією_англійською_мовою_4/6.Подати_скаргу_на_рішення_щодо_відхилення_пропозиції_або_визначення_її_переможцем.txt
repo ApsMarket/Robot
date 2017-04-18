@@ -1,0 +1,4 @@
+*** Settings ***
+Documentation     Аналогічно сценарію І «Відкриті торги»
+
+*** Test Cases ***
