@@ -22,3 +22,11 @@ ${locator_button_next_step}    xpath=.//*[@id='wrapper']/div/div/div/div[1]/div/
 ${locator_add_item_button}    xpath=.//*[@id='wrapper']/div/div/div/div[3]/div[1]/div/button
 ${locator_item_description}    id=Description
 ${locator_Quantity}    id=Quantity
+${locator_button_create_plus}    id=btn_create_purchase    # id=btn_create_purchase
+${locator_dopzakupka_creation}    id=url_create_purchase_0    # id=url_create_purchase_0
+${locator_zakupka_name_ukr}    id=title    # id=title
+${locator_zakupka_name_eng}    id=title_en    # id=title_en
+${locator_Currency_field_choose}    xpath=html/body/div[1]/div[2]/div[2]/div/div/div/div/div/div/div/form/div[6]/div/select    # xpath=html/body/div[1]/div[2]/div[2]/div/div/div/div/div/div/div/form/div[6]/div/select
+${locator_expected_value}    id=budget    # id=budget
+${locator_minstep_value_money}    id=min_step    # id=min_step
+${locator_tender_guarantee}    id=guarantee    # id=guarantee

@@ -1,5 +1,11 @@
+*** Settings ***
+Library           Selenium2Library
+Resource          ../LocatorsOY.robot
+
 *** Test Cases ***
 Створити оголошення закупівлі, зберегти як чернетку
+    Run Keyword Login2    Keyword Login2
+    Run Keyword Zakupka Creation 1lot
 
 Опублікувати оголошення в ЦБД
 
