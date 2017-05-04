@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20170504 15:01:30.064" generator="Robot 3.0.2 (Python 2.7.13 on win32)">
+<suite source="C:\Robot\Допорогові_закупівлі_1\1.Створення_закупівлі,_один_лот_із_декількома_номенклатурами_та_іншими_неціновими_показниками.robot" id="s1" name="1.Створення закупівлі, один лот із декількома номенклатурами та іншими неціновими показниками">
+<test id="s1-t1" name="Створити оголошення закупівлі, зберегти як чернетку">
+<kw name="Run Keyword" library="BuiltIn">
+<doc>Executes the given keyword with the given arguments.</doc>
+<arguments>
+<arg>Keyword_Login</arg>
+</arguments>
+<kw name="Keyword_Login" library="My_Keywords">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>http://192.168.90.170/</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20170504 15:01:30.227" level="INFO">Opening browser 'chrome' to base url 'http://192.168.90.170/'</msg>
+<status status="PASS" endtime="20170504 15:01:35.465" starttime="20170504 15:01:30.227"></status>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="Selenium2Library">
+<doc>Waits until element specified with `locator` is enabled.</doc>
+<arguments>
+<arg>${locator_entrance_arrow}</arg>
+</arguments>
+<status status="PASS" endtime="20170504 15:01:35.595" starttime="20170504 15:01:35.465"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${locator_entrance_arrow}</arg>
+</arguments>
+<msg timestamp="20170504 15:01:35.596" level="INFO">Clicking element 'xpath=.//*[@id='header']/nav/div[2]/ul/li[4]/a'.</msg>
+<status status="PASS" endtime="20170504 15:01:35.691" starttime="20170504 15:01:35.595"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${locator_login_dropdown}</arg>
+</arguments>
+<msg timestamp="20170504 15:01:35.692" level="INFO">Clicking element 'id=butLoginPartial'.</msg>
+<status status="PASS" endtime="20170504 15:01:36.094" starttime="20170504 15:01:35.691"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${locator_emailField}</arg>
+<arg>qa2@gmail.com</arg>
+</arguments>
+<msg timestamp="20170504 15:01:36.095" level="INFO">Typing text 'qa2@gmail.com' into text field 'id=Email'</msg>
+<status status="PASS" endtime="20170504 15:01:36.272" starttime="20170504 15:01:36.094"></status>
+</kw>
+<kw name="Input Password" library="Selenium2Library">
+<doc>Types the given password into text field identified by `locator`.</doc>
+<arguments>
+<arg>${locator_passwordField}</arg>
+<arg>qwerty123</arg>
+</arguments>
+<msg timestamp="20170504 15:01:36.272" level="INFO">Typing password into text field 'id=Password'</msg>
+<status status="PASS" endtime="20170504 15:01:36.403" starttime="20170504 15:01:36.272"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>${locator_button_login}</arg>
+</arguments>
+<msg timestamp="20170504 15:01:36.403" level="INFO">Clicking button 'id=submitLogin'.</msg>
+<status status="PASS" endtime="20170504 15:01:37.511" starttime="20170504 15:01:36.403"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>qqqqqqq</arg>
+</arguments>
+<status status="PASS" endtime="20170504 15:01:37.514" starttime="20170504 15:01:37.511"></status>
+</kw>
+<status status="PASS" endtime="20170504 15:01:37.515" starttime="20170504 15:01:30.227"></status>
+</kw>
+<status status="PASS" endtime="20170504 15:01:37.515" starttime="20170504 15:01:30.227"></status>
+</kw>
+<kw name="Run Keyword" library="BuiltIn">
+<doc>Executes the given keyword with the given arguments.</doc>
+<arguments>
+<arg>Keyword_New_Zakupka_Creation_1lot</arg>
+</arguments>
+<kw name="Keyword_New_Zakupka_Creation_1lot" library="My_Keywords">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>qqqqqqq</arg>
+</arguments>
+<status status="PASS" endtime="20170504 15:01:37.517" starttime="20170504 15:01:37.517"></status>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="Selenium2Library">
+<doc>Waits until element specified with `locator` is enabled.</doc>
+<arguments>
+<arg>${locator_button_create_plus}</arg>
+</arguments>
+<status status="PASS" endtime="20170504 15:01:37.602" starttime="20170504 15:01:37.518"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>12344566</arg>
+</arguments>
+<status status="PASS" endtime="20170504 15:01:37.603" starttime="20170504 15:01:37.602"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>${locator_button_create_plus}</arg>
+</arguments>
+<msg timestamp="20170504 15:01:37.604" level="INFO">Clicking button 'id=btn_create_purchase'.</msg>
+<status status="PASS" endtime="20170504 15:01:37.712" starttime="20170504 15:01:37.603"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${locator_dopzakupka_creation}</arg>
+</arguments>
+<msg timestamp="20170504 15:01:37.713" level="INFO">Clicking element 'id=url_create_purchase_0'.</msg>
+<status status="PASS" endtime="20170504 15:01:37.833" starttime="20170504 15:01:37.712"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${locator_zakupka_name_ukr}</arg>
+<arg>Тест1</arg>
+</arguments>
+<msg timestamp="20170504 15:01:37.834" level="INFO">Typing text 'Тест1' into text field 'id=title'</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20170504 15:01:38.005" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20170504 15:01:38.005" starttime="20170504 15:01:37.857"></status>
+</kw>
+<msg timestamp="20170504 15:01:38.008" level="FAIL">ValueError: Element locator 'id=title' did not match any elements.</msg>
+<status status="FAIL" endtime="20170504 15:01:38.008" starttime="20170504 15:01:37.833"></status>
+</kw>
+<status status="FAIL" endtime="20170504 15:01:38.009" starttime="20170504 15:01:37.516"></status>
+</kw>
+<status status="FAIL" endtime="20170504 15:01:38.009" starttime="20170504 15:01:37.515"></status>
+</kw>
+<tags>
+<tag>run</tag>
+</tags>
+<status status="FAIL" endtime="20170504 15:01:38.011" critical="yes" starttime="20170504 15:01:30.211">ValueError: Element locator 'id=title' did not match any elements.</status>
+</test>
+<test id="s1-t2" name="Опублікувати оголошення в ЦБД">
+<tags>
+<tag>run</tag>
+</tags>
+<status status="FAIL" endtime="20170504 15:01:38.015" critical="yes" starttime="20170504 15:01:38.014">Test case contains no keywords.</status>
+</test>
+<test id="s1-t3" name="Внести зміни до оголошення">
+<tags>
+<tag>run</tag>
+</tags>
+<status status="FAIL" endtime="20170504 15:01:38.018" critical="yes" starttime="20170504 15:01:38.017">Test case contains no keywords.</status>
+</test>
+<test id="s1-t4" name="Опублікувати оголошення зі змінами в ЦБД">
+<tags>
+<tag>run</tag>
+</tags>
+<status status="FAIL" endtime="20170504 15:01:38.024" critical="yes" starttime="20170504 15:01:38.023">Test case contains no keywords.</status>
+</test>
+<test id="s1-t5" name="Отримати повідомлення про запитання/вимоги/звернення">
+<tags>
+<tag>run</tag>
+</tags>
+<status status="FAIL" endtime="20170504 15:01:38.030" critical="yes" starttime="20170504 15:01:38.029">Test case contains no keywords.</status>
+</test>
+<test id="s1-t6" name="Отримати нагадування про запитання/вимоги без відповіді">
+<tags>
+<tag>run</tag>
+</tags>
+<status status="FAIL" endtime="20170504 15:01:38.036" critical="yes" starttime="20170504 15:01:38.035">Test case contains no keywords.</status>
+</test>
+<test id="s1-t7" name="Надати відповідь на запитання, вимогу">
+<tags>
+<tag>run</tag>
+</tags>
+<status status="FAIL" endtime="20170504 15:01:38.039" critical="yes" starttime="20170504 15:01:38.038">Test case contains no keywords.</status>
+</test>
+<test id="s1-t8" name="Скасування процедури закупівлі">
+<tags>
+<tag>run</tag>
+</tags>
+<status status="FAIL" endtime="20170504 15:01:38.050" critical="yes" starttime="20170504 15:01:38.049">Test case contains no keywords.</status>
+</test>
+<status status="FAIL" endtime="20170504 15:01:38.054" starttime="20170504 15:01:30.064"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="8" pass="0">Critical Tests</stat>
+<stat fail="8" pass="0">All Tests</stat>
+</total>
+<tag>
+<stat fail="8" pass="0">run</stat>
+</tag>
+<suite>
+<stat fail="8" id="s1" name="1.Створення закупівлі, один лот із декількома номенклатурами та іншими неціновими показниками" pass="0">1.Створення закупівлі, один лот із декількома номенклатурами та іншими неціновими показниками</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

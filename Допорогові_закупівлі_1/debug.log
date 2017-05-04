@@ -1,0 +1,6 @@
+[0504/125308.992:ERROR:process_info.cc(625)] range at 0xf19a304800000000, size 0x15d fully unreadable
+[0504/125308.992:ERROR:process_info.cc(625)] range at 0xf19a306800000000, size 0x15d fully unreadable
+[0504/125308.992:ERROR:process_info.cc(625)] range at 0x0, size 0x15d fully unreadable
+[0504/151358.102:ERROR:process_reader_win.cc(114)] NtOpenThread: {Отказано в доступе} Процесс запросил доступ к объекту, но права на доступ не предоставлены.  (0xc0000022)
+[0504/151358.102:ERROR:exception_snapshot_win.cc(87)] thread ID 7616 not found in process
+[0504/151358.102:WARNING:crash_report_exception_handler.cc(60)] ProcessSnapshotWin::Initialize failed

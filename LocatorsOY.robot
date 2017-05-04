@@ -30,3 +30,8 @@ ${locator_Currency_field_choose}    xpath=html/body/div[1]/div[2]/div[2]/div/div
 ${locator_expected_value}    id=budget    # id=budget
 ${locator_minstep_value_money}    id=min_step    # id=min_step
 ${locator_tender_guarantee}    id=guarantee    # id=guarantee
+${locator_clarification_period_start}    id=period_enquiry_start    # id=period_enquiry_start
+${locator_clarification_period_end}    id=period_enquiry_end    # id=period_enquiry_end
+${locator_entrance_arrow}    xpath=.//*[@id='header']/nav/div[2]/ul/li[4]/a    # xpath=.//*[@id='header']/nav/div[2]/ul/li[4]/a
+${locator_login_dropdown}    id=butLoginPartial    # id=butLoginPartial
+${locator_button_login}    id=submitLogin    # id=submitLogin
