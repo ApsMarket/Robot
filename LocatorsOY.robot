@@ -26,7 +26,7 @@ ${locator_button_create_plus}    id=btn_create_purchase    # id=btn_create_purch
 ${locator_dopzakupka_creation}    id=url_create_purchase_0    # id=url_create_purchase_0
 ${locator_zakupka_name_ukr}    id=title    # id=title
 ${locator_zakupka_name_eng}    id=title_en    # id=title_en
-${locator_Currency_field_choose}    xpath=html/body/div[1]/div[2]/div[2]/div/div/div/div/div/div/div/form/div[6]/div/select    # xpath=html/body/div[1]/div[2]/div[2]/div/div/div/div/div/div/div/form/div[6]/div/select
+${locator_Currency_field_choose}    name=currencies    # name=currencies
 ${locator_expected_value}    id=budget    # id=budget
 ${locator_minstep_value_money}    id=min_step    # id=min_step
 ${locator_tender_guarantee}    id=guarantee    # id=guarantee

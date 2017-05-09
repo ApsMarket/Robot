@@ -1,9 +1,10 @@
 *** Settings ***
 Library           Selenium2Library
+Resource          LocatorsOY.robot
 
 *** Keywords ***
 Keyword_Login
-    Open Browser    http://192.168.90.170/    chrome
+    Open Browser    http://192.168.90.209/    chrome
     Wait Until Element Is Enabled    ${locator_entrance_arrow}
     Click Element    ${locator_entrance_arrow}
     Click Element    ${locator_login_dropdown}
@@ -21,7 +22,8 @@ Keyword_New_Zakupka_Creation_1lot
     Click Element    ${locator_dopzakupka_creation}
     Input Text    ${locator_zakupka_name_ukr}    Тест1
     Input Text    ${locator_zakupka_name_eng}    Test1
-    Select From List By Label    ${locator_Currency_field_choose}    *GBP
+    Select From List By Label    name=purchaseType    cт. 35, п. 1 Закупівля творів мистецтва або закупівля, пов’язана із захистом прав інтелектуальної власності, або укладення договору про закупівлю з переможцем архітектурного чи мистецького конкурсу.
+    Select From List By Label    ${locator_Currency_field_choose}    GBP
     Input Text    ${locator_expected_value}    125890
     Input Text    ${locator_minstep_value_money}    5
     Input Text    ${locator_tender_guarantee}    150
