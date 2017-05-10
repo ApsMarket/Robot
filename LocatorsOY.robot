@@ -23,7 +23,7 @@ ${locator_add_item_button}    xpath=.//*[@id='wrapper']/div/div/div/div[3]/div[1
 ${locator_item_description}    id=Description
 ${locator_Quantity}    id=Quantity
 ${locator_button_create_plus}    id=btn_create_purchase    # id=btn_create_purchase
-${locator_dopzakupka_creation}    id=url_create_purchase_0    # id=url_create_purchase_0
+${locator_dopzakupka_creation}    xpath=.//*[@id='url_create_purchase_0']/..    # xpath=.//*[@id='url_create_purchase_0']/..
 ${locator_zakupka_name_ukr}    id=title    # id=title
 ${locator_zakupka_name_eng}    id=title_en    # id=title_en
 ${locator_Currency_field_choose}    name=currencies    # name=currencies
