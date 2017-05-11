@@ -5,7 +5,7 @@ Library           DateTime
 
 *** Keywords ***
 Keyword_Login
-    Open Browser    http://192.168.90.209/    chrome
+    Open Browser    http://192.168.90.169/    chrome
     Wait Until Element Is Enabled    ${locator_entrance_arrow}
     Click Element    ${locator_entrance_arrow}
     Click Element    ${locator_login_dropdown}
@@ -32,8 +32,7 @@ Keyword_New_Zakupka_Creation_1lot
     Input Text    ${locator_minstep_value_money}    5
     Input Text    ${locator_tender_guarantee}    150
     Log To Console    666666666666666666666
-    ${dt}=    Get Current Date    UTC    +2
-    Should Be Equal    ${dt}    YYYY-MM-DDThh:mm:ssTZD
+    ${dt}=    Get Current Date    UTC    +2 hours    exclude_millis=yes
     Log To Console    ${dt}
     Input Text    ${locator_clarification_period_start}    ${dt}
-    Add Time To Time    ${locator_clarification_period_end}    24 hours
+    Comment    Add Time To Time    ${locator_clarification_period_end}    24 hours
