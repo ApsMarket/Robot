@@ -35,3 +35,4 @@ ${locator_clarification_period_end}    id=period_enquiry_end    # id=period_enqu
 ${locator_entrance_arrow}    xpath=.//*[@id='header']/nav/div[2]/ul/li[4]/a    # xpath=.//*[@id='header']/nav/div[2]/ul/li[4]/a
 ${locator_login_dropdown}    id=butLoginPartial    # id=butLoginPartial
 ${locator_button_login}    id=submitLogin    # id=submitLogin
+${locator_next_step_frst}    id=next_step    # id=next_step

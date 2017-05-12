@@ -6,7 +6,6 @@ Library           Selenium2Library
 Resource          ../LocatorsOY.robot
 Resource          ../My_Keywords.robot
 Library           DateTime
-Resource          ../LocatorsOY.robot
 
 *** Test Cases ***
 Створити оголошення закупівлі, зберегти як чернетку

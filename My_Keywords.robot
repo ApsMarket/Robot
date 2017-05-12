@@ -35,4 +35,5 @@ Keyword_New_Zakupka_Creation_1lot
     ${dt}=    Get Current Date    UTC    +2 hours    exclude_millis=yes
     Log To Console    ${dt}
     Input Text    ${locator_clarification_period_start}    ${dt}
-    Comment    Add Time To Time    ${locator_clarification_period_end}    24 hours
+    Sleep    20
+    Click Button
