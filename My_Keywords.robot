@@ -36,4 +36,10 @@ Keyword_New_Zakupka_Creation_1lot
     Log To Console    ${dt}
     Input Text    ${locator_clarification_period_start}    ${dt}
     Sleep    20
-    Click Button
+    Click Button    ${locator_next_step_frst}
+    Wait Until Element Is Enabled    ${locator_add_positionButton}
+    Log To Console    do klika
+    Click Button    ${locator_add_positionButton}
+    Log To Console    posle klika
+    Wait Until Element Is Enabled    id=procurementSubject_description00
+    Input Text    id=procurementSubject_description00    velosiped
