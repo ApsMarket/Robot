@@ -38,3 +38,6 @@ ${locator_button_login}    id=submitLogin    # id=submitLogin
 ${locator_next_step_frst}    id=next_step    # id=next_step
 ${locator_add_positionButton}    id=add_procurement_subject0    # id=add_procurement_subject0
 ${locator_exactname_tender}    id=procurementSubject_description00    # id=procurementSubject_description00
+${locator_quantity_goods}    id=procurementSubject_quantity00    # id=procurementSubject_quantity00
+${locator_button_classifier}    id=cls_click_00    # id=cls_click_00
+${locator_search_goodsfield}    id=search-classifier-text    # id=search-classifier-text

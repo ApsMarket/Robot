@@ -53,7 +53,13 @@ Keyword_New_Zakupka_Creation_1lot
     Log To Console    do klika
     Click Button    ${locator_add_positionButton}
     Log To Console    posle klika
+    #Ввод конкр.название
     Wait Until Element Is Enabled    ${locator_exactname_tender}
     ${title}=    Set Variable    test111
     Input Text    ${locator_exactname_tender}    ${title}
     Define angular +id_mod    procurementSubject    procurementSubject_description00    ${title}    description
+    Input Text    ${locator_quantity_goods}    125890
+    Select From List By Label
+    angular
+    Click Button    ${locator_button_classifier}
+    Input Text    ${locator_search_goodsfield}    18000000
