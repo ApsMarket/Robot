@@ -58,8 +58,14 @@ Keyword_New_Zakupka_Creation_1lot
     ${title}=    Set Variable    test111
     Input Text    ${locator_exactname_tender}    ${title}
     Define angular +id_mod    procurementSubject    procurementSubject_description00    ${title}    description
+    #ввод к-во товаров и единица измерения
     Input Text    ${locator_quantity_goods}    125890
     Select From List By Label
     angular
+    #Выбор ДК021:2015
     Click Button    ${locator_button_classifier}
     Input Text    ${locator_search_goodsfield}    18000000
+    Click Button    ${locator_add_classifier}
+    Click Button    id=otherClassifier
+    Click Button    ${locator_add_classifier}
+    Click Element    xpath=.//*[@id='is_delivary_00']/div[1]/div[1]

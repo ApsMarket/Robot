@@ -41,3 +41,4 @@ ${locator_exactname_tender}    id=procurementSubject_description00    # id=procu
 ${locator_quantity_goods}    id=procurementSubject_quantity00    # id=procurementSubject_quantity00
 ${locator_button_classifier}    id=cls_click_00    # id=cls_click_00
 ${locator_search_goodsfield}    id=search-classifier-text    # id=search-classifier-text
+${locator_add_classifier}    id=add-classifier    # id=add-classifier
