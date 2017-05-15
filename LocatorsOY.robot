@@ -37,3 +37,4 @@ ${locator_login_dropdown}    id=butLoginPartial    # id=butLoginPartial
 ${locator_button_login}    id=submitLogin    # id=submitLogin
 ${locator_next_step_frst}    id=next_step    # id=next_step
 ${locator_add_positionButton}    id=add_procurement_subject0    # id=add_procurement_subject0
+${locator_exactname_tender}    id=procurementSubject_description00    # id=procurementSubject_description00
