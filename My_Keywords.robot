@@ -3,6 +3,7 @@ Library           Selenium2Library
 Resource          LocatorsOY.robot
 Library           DateTime
 Resource          Допорогові_закупівлі_1/Angular.robot
+Library           String
 
 *** Keywords ***
 Keyword_Login
@@ -39,7 +40,8 @@ Keyword_New_Zakupka_Creation_1lot
     Log To Console    666666666666666666666
     #период уточнения старт дата
     ${periodEnquiry_start}=    Get Current Date    UTC    +2 hours    exclude_millis=yes
-    Execute Javascript
+    ${periodEnquiry_start}=    Convert To String    ${periodEnquiry_start}
+    ${periodEnquiry_start}=    String.Replace String    ${periodEnquiry_start}    integer    string
     Log To Console    ${periodEnquiry_start}
     Input Text    ${locator_clarification_period_start}    ${periodEnquiry_start}
     #период уточнения конечная дата

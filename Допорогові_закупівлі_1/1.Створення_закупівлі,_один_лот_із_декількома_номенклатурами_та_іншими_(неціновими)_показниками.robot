@@ -7,6 +7,7 @@ Resource          ../LocatorsOY.robot
 Resource          ../My_Keywords.robot
 Library           DateTime
 Resource          Angular.robot
+Library           String
 
 *** Test Cases ***
 Створити оголошення закупівлі, зберегти як чернетку
