@@ -25,7 +25,7 @@ ${locator_Quantity}    id=Quantity
 ${locator_button_create_plus}    id=btn_create_purchase    # id=btn_create_purchase
 ${locator_dopzakupka_creation}    xpath=.//*[@id='url_create_purchase_0']/..    # xpath=.//*[@id='url_create_purchase_0']/..
 ${locator_zakupka_name_ukr}    id=title    # id=title
-${locator_zakupka_name_eng}    id=title_en    # id=title_en
+${locator_zakupka_note_ukr}    id=description    # id=description
 ${locator_Currency_field_choose}    name=currencies    # name=currencies
 ${locator_expected_value}    id=budget    # id=budget
 ${locator_minstep_value_money}    id=min_step    # id=min_step
