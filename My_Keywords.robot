@@ -35,21 +35,34 @@ Keyword_New_Zakupka_Creation_1lot
     Select From List By Label    ${locator_Currency_field_choose}    GBP
     Input Text    ${locator_expected_value}    125890
     Execute Javascript    window.scroll(2000,2000)
-    Input Text    ${locator_minstep_value_money}    5
+    Input Text    ${locator_minstep_value_money}    810
     Comment    Input Text    ${locator_tender_guarantee}    150
     Log To Console    666666666666666666666
     #период уточнения старт дата
+    Click Element    ${locator_clarification_period_start}
+    Log To Console    999999999999999999999999
     ${periodEnquiry_start}=    Get Current Date    UTC    +2 hours    exclude_millis=yes
     ${periodEnquiry_start}=    Convert To String    ${periodEnquiry_start}
     ${periodEnquiry_start}=    String.Replace String    ${periodEnquiry_start}    integer    string
+    Press Key    ${locator_clarification_period_start}    ${periodEnquiry_start}
+    Press Key    ${locator_clarification_period_start}    \\\13
     Log To Console    ${periodEnquiry_start}
-    Input Text    ${locator_clarification_period_start}    ${periodEnquiry_start}
+    Click Element    ${locator_clarification_period_start}
+    Log To Console    aaaaaaaaaaaaaaaaaaaa
     #период уточнения конечная дата
+    Click Element    ${locator_clarification_period_end}
     ${periodEnquiry_end}=    Get Current Date    UTC    +2 hours    exclude_millis=yes
-    Input Text    ${locator_clarification_period_start}    ${periodEnquiry_start}
+    ${periodEnquiry_end}=    Add Time To Date    ${periodEnquiry_end}    3 days    exclude_millis=yes
+    Log To Console    ${periodEnquiry_end}
+    Comment    ${periodEnquiry_end}=    Convert To String    ${periodEnquiry_end}
+    Comment    ${periodEnquiry_end}=    String.Replace String    ${periodEnquiry_end}    integer    string
+    Press Key    ${locator_clarification_period_end}    ${periodEnquiry_end}
+    Press Key    ${locator_clarification_period_end}    \\\13
+    Comment    ${periodEnquiry_end}=    Get Current Date    UTC    +2 hours    exclude_millis=yes
     Comment    define_date    purchase    period_enquiry_start    ${periodEnquiry_start}    ${periodEnquiry_end}    periodEnquiry
-    Sleep    20
+    Comment    Sleep    20
     #Переход на след.страницу
+    Wait Until Element Is Enabled    ${locator_next_step_frst}
     Click Button    ${locator_next_step_frst}
     Wait Until Element Is Enabled    ${locator_add_positionButton}
     Log To Console    do klika
@@ -62,8 +75,7 @@ Keyword_New_Zakupka_Creation_1lot
     Comment    Define angular +id_mod    procurementSubject    procurementSubject_description00    ${title}    description
     #ввод к-во товаров и единица измерения
     Input Text    ${locator_quantity_goods}    125890
-    Select From List By Label
-    Comment    angular
+    Comment    Select From List By Label
     #Выбор ДК021:2015
     Click Button    ${locator_button_classifier}
     Input Text    ${locator_search_goodsfield}    18000000
@@ -71,3 +83,4 @@ Keyword_New_Zakupka_Creation_1lot
     Click Button    id=otherClassifier
     Click Button    ${locator_add_classifier}
     Click Element    xpath=.//*[@id='is_delivary_00']/div[1]/div[1]
+    \    ${periodEnquiry_end}
