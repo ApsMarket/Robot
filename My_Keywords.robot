@@ -144,8 +144,10 @@ Keyword_Second_variant_Zakupka
     Click Element At Coordinates    ${locator_period_tender_end}    -200    -10
     Press Key    ${locator_period_tender_end}    ${periodTender_end}
     #Переход на след.страницу
-    Wait Until Element Is Enabled    ${locator_next_step_frst}
-    Click Button    ${locator_next_step_frst}
+    Click Element    id=createOrUpdatePurchase
+    Log To Console    111111111
+    Wait Until Element Is Visible    ${locator_next_step_frst}
+    Click Element    ${locator_next_step_frst}
     Wait Until Element Is Enabled    ${locator_add_positionButton}
     Log To Console    do klika
     Click Button    ${locator_add_positionButton}
@@ -154,4 +156,3 @@ Keyword_Second_variant_Zakupka
     Wait Until Element Is Enabled    ${locator_exactname_tender}
     ${title}=    Set Variable    test111
     Input Text    ${locator_exactname_tender}    ${title}
-    Comment    Define angular +id_mod    procurementSubject    procurementSubject_description00    ${title}    description
