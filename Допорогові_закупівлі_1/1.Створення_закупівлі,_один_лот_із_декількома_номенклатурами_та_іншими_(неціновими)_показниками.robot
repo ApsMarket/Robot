@@ -13,7 +13,7 @@ Library           String
 Створити оголошення закупівлі, зберегти як чернетку
     Run Keyword    Keyword_Login
     Run Keyword    Keyword_Second_variant_Zakupka
-    Run Keyword    Keyword_New_Zakupka_Creation_1lot
+    Comment    Run Keyword    Keyword_New_Zakupka_Creation_1lot
 
 Опублікувати оголошення в ЦБД
 

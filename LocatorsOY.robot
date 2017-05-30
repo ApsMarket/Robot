@@ -37,10 +37,13 @@ ${locator_login_dropdown}    id=butLoginPartial    # id=butLoginPartial
 ${locator_button_login}    id=submitLogin    # id=submitLogin
 ${locator_next_step_frst}    id=next_step    # id=next_step
 ${locator_add_positionButton}    id=add_procurement_subject0    # id=add_procurement_subject0
-${locator_exactname_tender}    id=procurementSubject_description00    # id=procurementSubject_description00
+${locator_exactname_tenderPosition}    id=procurementSubject_description00    # id=procurementSubject_description00
 ${locator_quantity_goods}    id=procurementSubject_quantity00    # id=procurementSubject_quantity00
 ${locator_button_classifier}    id=cls_click_00    # id=cls_click_00
 ${locator_search_goodsfield}    id=search-classifier-text    # id=search-classifier-text
 ${locator_add_classifier}    id=add-classifier    # id=add-classifier
 ${locator_period_tender_start}    id=period_tender_start    # id=period_tender_start
 ${locator_period_tender_end}    id=period_tender_end    # id=period_tender_end
+${locator_exactname_tenderPosition_eng}    id=procurementSubject_description_En00    # id=procurementSubject_description_En00
+${locator_goods_quantity}    id=procurementSubject_quantity00    # id=procurementSubject_quantity00
+${locator_measure}    id=select_unit00    # id=select_unit00

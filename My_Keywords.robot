@@ -145,14 +145,23 @@ Keyword_Second_variant_Zakupka
     Press Key    ${locator_period_tender_end}    ${periodTender_end}
     #Переход на след.страницу
     Click Element    id=createOrUpdatePurchase
-    Log To Console    111111111
     Wait Until Element Is Visible    ${locator_next_step_frst}
     Click Element    ${locator_next_step_frst}
     Wait Until Element Is Enabled    ${locator_add_positionButton}
     Log To Console    do klika
+    Sleep    3
     Click Button    ${locator_add_positionButton}
     Log To Console    posle klika
     #Ввод конкр.название
-    Wait Until Element Is Enabled    ${locator_exactname_tender}
-    ${title}=    Set Variable    test111
-    Input Text    ${locator_exactname_tender}    ${title}
+    Wait Until Page Contains Element    ${locator_exactname_tenderPosition}
+    Wait Until Element Is Enabled    ${locator_exactname_tenderPosition}
+    ${title}=    Set Variable    Тест111
+    Press Key    ${locator_exactname_tenderPosition}    ${title}
+    ${titleEng}=    Set Variable    Test222
+    Press Key    ${locator_exactname_tenderPosition_eng}    ${titleEng}
+    #К-во товара
+    ${goodsQuantity}=    Set Variable    1590
+    Press Key    ${locator_goods_quantity}    ${goodsQuantity}
+    #Выбор единицы измерения
+    Select From List By Label    ${locator_measure}    пара
+    Execute Javascript    window.scroll(1000,1000)
