@@ -84,3 +84,74 @@ Keyword_New_Zakupka_Creation_1lot
     Click Button    ${locator_add_classifier}
     Click Element    xpath=.//*[@id='is_delivary_00']/div[1]/div[1]
     \    ${periodEnquiry_end}
+
+Keyword_Second_variant_Zakupka
+    Log To Console    qqqqqqq
+    Wait Until Element Is Enabled    ${locator_button_create_plus}
+    Log To Console    12344566
+    #Ввод названия закупки
+    Click Button    ${locator_button_create_plus}
+    Wait Until Element Is Enabled    ${locator_dopzakupka_creation}
+    Sleep    3
+    Click Element    ${locator_dopzakupka_creation}
+    Input Text    ${locator_zakupka_name_ukr}    Тест1
+    Comment    define_angular    purchase    title    Тест1
+    Input Text    ${locator_zakupka_note_ukr}    Test1
+    #Выбор условия закупки
+    Execute Javascript    window.scroll(2000,2000)
+    #Выбор стоимости закупки
+    Select From List By Label    ${locator_Currency_field_choose}    UAH
+    Input Text    ${locator_expected_value}    12345
+    Execute Javascript    window.scroll(2000,2000)
+    Input Text    ${locator_minstep_value_money}    78
+    Log To Console    666666666666666666666
+    #период уточнения старт дата
+    Click Element    ${locator_clarification_period_start}
+    Log To Console    999999999999999999999999
+    ${periodEnquiry_start}=    Get Current Date    UTC    +2 hours    exclude_millis=yes
+    ${periodEnquiry_start}=    Convert To String    ${periodEnquiry_start}
+    ${periodEnquiry_start}=    String.Replace String    ${periodEnquiry_start}    integer    string
+    Click Element At Coordinates    ${locator_clarification_period_start}    -200    -10
+    Press Key    ${locator_clarification_period_start}    ${periodEnquiry_start}
+    Comment    Press Key    ${locator_clarification_period_start}    \\\13
+    Log To Console    ${periodEnquiry_start}
+    Click Element    ${locator_clarification_period_start}
+    Log To Console    aaaaaaaaaaaaaaaaaaaa
+    #период уточнения конечная дата
+    Click Element    ${locator_clarification_period_end}
+    ${periodEnquiry_end}=    Get Current Date    UTC    +2 hours    exclude_millis=yes
+    ${periodEnquiry_end}=    Add Time To Date    ${periodEnquiry_end}    +1 day    exclude_millis=yes
+    Log To Console    ${periodEnquiry_end}
+    ${periodEnquiry_end}=    Convert To String    ${periodEnquiry_end}
+    ${periodEnquiry_end}=    String.Replace String    ${periodEnquiry_end}    integer    string
+    Click Element At Coordinates    ${locator_clarification_period_end}    -200    -10
+    Press Key    ${locator_clarification_period_end}    ${periodEnquiry_end}
+    Comment    Press Key    ${locator_clarification_period_end}    \\\13
+    #период начало приема предложений
+    Click Element    ${locator_period_tender_start}
+    ${periodTender_start}=    Get Current Date    UTC    +2 hours    exclude_millis=yes
+    ${periodTender_start}=    Add Time To Date    ${periodTender_start}    +1 day    exclude_millis=yes
+    ${periodTender_start}=    Convert To String    ${periodTender_start}
+    ${periodTender_start}=    String.Replace String    ${periodTender_start}    integer    string
+    Click Element At Coordinates    ${locator_period_tender_start}    -200    -10
+    Press Key    ${locator_period_tender_start}    ${periodTender_start}
+    Comment    Press Key    ${locator_period_tender_start}    \\\13
+    #период окончание приема предложений
+    Click Element    ${locator_period_tender_end}
+    ${periodTender_end}=    Add Time To Date    ${periodTender_start}    +3 days    exclude_millis=yes
+    ${periodTender_end}=    Convert To String    ${periodTender_end}
+    ${periodTender_end}=    String.Replace String    ${periodTender_end}    integer    string
+    Click Element At Coordinates    ${locator_period_tender_end}    -200    -10
+    Press Key    ${locator_period_tender_end}    ${periodTender_end}
+    #Переход на след.страницу
+    Wait Until Element Is Enabled    ${locator_next_step_frst}
+    Click Button    ${locator_next_step_frst}
+    Wait Until Element Is Enabled    ${locator_add_positionButton}
+    Log To Console    do klika
+    Click Button    ${locator_add_positionButton}
+    Log To Console    posle klika
+    #Ввод конкр.название
+    Wait Until Element Is Enabled    ${locator_exactname_tender}
+    ${title}=    Set Variable    test111
+    Input Text    ${locator_exactname_tender}    ${title}
+    Comment    Define angular +id_mod    procurementSubject    procurementSubject_description00    ${title}    description
