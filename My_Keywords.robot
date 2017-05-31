@@ -170,6 +170,7 @@ Keyword_Second_variant_Zakupka
     Wait Until Element Is Visible    ${locator_search-classifier-text}
     ${dkpp}=    Set Variable    16000000-5
     Press Key    ${locator_search-classifier-text}    ${dkpp}
+    Wait Until Element Is Enabled    //*[@id='tree']//li[@aria-selected="true"]     30
     Clear Element Text    ${locator_search-classifier-text}
     Click Button    ${locator_add-classifier_DK}
     #Выбор другого ДК
@@ -179,4 +180,16 @@ Keyword_Second_variant_Zakupka
     ${dkpp2}=    Set Variable    000
     Sleep    2
     Press Key    ${locator_search-classifier-text2}    ${dkpp2}
+    Wait Until Element Is Enabled     //*[@id='tree']//li[@aria-selected="true"]    30
     Click Button    ${locator_add-classifier_DK}
+    #Дата поставки
+    ${delivery_Date}=    Get Current Date    UTC    +2 hours
+    ${delivery_Date}=    Set Variable    ${delivery_Date}
+    Подготовить датапикер    ${locator_delivery_end}
+    Press Key    ${locator_delivery_end}    ${delivery_Date}
+    Click Element    ${locator_add_position}
+
+Подготовить датапикер
+    [Arguments]    ${id}
+    :FOR    ${index}    IN RANGE    1    16
+    \    Press Key    ${locator_delivery_end}    \\8

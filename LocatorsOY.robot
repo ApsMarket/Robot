@@ -52,3 +52,5 @@ ${locator_search-classifier-text}    id=search-classifier-text    # id=search-cl
 ${locator_add-classifier_DK}    id=add-classifier    # id=add-classifier
 ${locator_otherDKButton}    xpath=.//*[@id='updateOrCreateProcurementSubject_0_0']/div[2]/div[4]/div/div[2]/div/span/button
 ${locator_search-classifier-text2}    id=search-classifier-text    # id=search-classifier-text
+${locator_delivery_end}    id=delivery_end_    # id=delivery_end_
+${locator_add_position}    id=update_00    # id=update_00
