@@ -26,7 +26,7 @@ ${locator_button_create_plus}    id=btn_create_purchase    # id=btn_create_purch
 ${locator_dopzakupka_creation}    xpath=.//*[@id='url_create_purchase_0']/..    # xpath=.//*[@id='url_create_purchase_0']/..
 ${locator_zakupka_name_ukr}    id=title    # id=title
 ${locator_zakupka_note_ukr}    id=description    # id=description
-${locator_Currency_field_choose}    name=currencies    # name=currencies
+${locator_Currency_field_choose}    id=select_currencies    # id=select_currencies
 ${locator_expected_value}    id=budget    # id=budget
 ${locator_minstep_value_money}    id=min_step    # id=min_step
 ${locator_tender_guarantee}    id=guarantee    # id=guarantee
@@ -47,3 +47,8 @@ ${locator_period_tender_end}    id=period_tender_end    # id=period_tender_end
 ${locator_exactname_tenderPosition_eng}    id=procurementSubject_description_En00    # id=procurementSubject_description_En00
 ${locator_goods_quantity}    id=procurementSubject_quantity00    # id=procurementSubject_quantity00
 ${locator_measure}    id=select_unit00    # id=select_unit00
+${locator_buttonDK021}    id=cls_click_00    # id=cls_click_00
+${locator_search-classifier-text}    id=search-classifier-text    # id=search-classifier-text
+${locator_add-classifier_DK}    id=add-classifier    # id=add-classifier
+${locator_otherDKButton}    xpath=.//*[@id='updateOrCreateProcurementSubject_0_0']/div[2]/div[4]/div/div[2]/div/span/button
+${locator_search-classifier-text2}    id=search-classifier-text    # id=search-classifier-text

@@ -104,10 +104,10 @@ Keyword_Second_variant_Zakupka
     Input Text    ${locator_expected_value}    12345
     Execute Javascript    window.scroll(2000,2000)
     Input Text    ${locator_minstep_value_money}    78
-    Log To Console    666666666666666666666
+    Log To Console    666
     #период уточнения старт дата
     Click Element    ${locator_clarification_period_start}
-    Log To Console    999999999999999999999999
+    Log To Console    999
     ${periodEnquiry_start}=    Get Current Date    UTC    +2 hours    exclude_millis=yes
     ${periodEnquiry_start}=    Convert To String    ${periodEnquiry_start}
     ${periodEnquiry_start}=    String.Replace String    ${periodEnquiry_start}    integer    string
@@ -116,7 +116,7 @@ Keyword_Second_variant_Zakupka
     Comment    Press Key    ${locator_clarification_period_start}    \\\13
     Log To Console    ${periodEnquiry_start}
     Click Element    ${locator_clarification_period_start}
-    Log To Console    aaaaaaaaaaaaaaaaaaaa
+    Log To Console    aaa
     #период уточнения конечная дата
     Click Element    ${locator_clarification_period_end}
     ${periodEnquiry_end}=    Get Current Date    UTC    +2 hours    exclude_millis=yes
@@ -165,3 +165,18 @@ Keyword_Second_variant_Zakupka
     #Выбор единицы измерения
     Select From List By Label    ${locator_measure}    пара
     Execute Javascript    window.scroll(1000,1000)
+    #Выбор ДК
+    Click Button    ${locator_buttonDK021}
+    Wait Until Element Is Visible    ${locator_search-classifier-text}
+    ${dkpp}=    Set Variable    16000000-5
+    Press Key    ${locator_search-classifier-text}    ${dkpp}
+    Clear Element Text    ${locator_search-classifier-text}
+    Click Button    ${locator_add-classifier_DK}
+    #Выбор другого ДК
+    sleep    2
+    Wait Until Element Is Enabled    ${locator_otherDKButton}
+    Click Button    ${locator_otherDKButton}
+    ${dkpp2}=    Set Variable    000
+    Sleep    2
+    Press Key    ${locator_search-classifier-text2}    ${dkpp2}
+    Click Button    ${locator_add-classifier_DK}
